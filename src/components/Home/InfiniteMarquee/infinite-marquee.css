@@ -1,0 +1,59 @@
+/* Marquee container with fade effect */
+.marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+
+  /* Fade effect left-right */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+/* Scrolling content */
+.marquee-inner {
+  display: inline-flex;
+  animation: marquee 60s linear infinite;
+}
+
+/* Infinite scroll keyframes */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Logos default grey + hover effect */
+.marquee-inner img {
+  /* filter: grayscale(100%); */
+  transition: filter 0.3s ease;
+}
+
+.marquee-inner img:hover {
+  filter: grayscale(0%);
+  
+}
+
+/* Text default grey + hover effect */
+.marquee-inner span {
+  color: #9ca3af; 
+  transition: color 0.3s ease;
+}
+
+.marquee-inner span:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.marquee-wrapper {
+  padding: 3rem 0;   /* top-bottom padding */
+  margin-top: 3rem;    /* horizontal centering if needed */
+  max-width: 100%;   /* full width */
+}

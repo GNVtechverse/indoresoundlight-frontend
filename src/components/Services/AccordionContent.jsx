@@ -22,7 +22,7 @@ const AccordionContent = ({ index }) => {
           </div>
           <div className="bg-gray-200 p-4 rounded">Wireless mic solutions and more...</div>
           <div className="bg-gray-200 p-4 rounded">Indoor & Outdoor Audio Solutions</div>
-          <div className="bg-gray-200 p-4 rounded">Surround Sound Setup for Special Events</div>
+          {/* <div className="bg-gray-200 p-4 rounded">Surround Sound Setup for Special Events</div> */}
         </>
       );
     case 1:

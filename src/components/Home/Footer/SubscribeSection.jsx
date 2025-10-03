@@ -8,7 +8,7 @@ const SubscribeSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!email) {
-      toast.error(`❌ Please enter a valid email!`, {
+      toast.error(`Please enter a valid email!`, {
         position: "bottom-right",
         theme: "light",
         autoClose: 4000,

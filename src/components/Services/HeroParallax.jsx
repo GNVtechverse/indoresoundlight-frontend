@@ -18,7 +18,7 @@ const HeroParallax = () => {
 
     <div className="h-full relative ">
       <motion.img
-        src="/Service/ServiseHero.jpg"
+        src="/Service/ServiceHero.jpg"
         alt="Parallax Background"
         className="absolute top-0 left-0 w-full h-full object-cover"
         style={{ y }}
